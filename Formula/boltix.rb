@@ -1,25 +1,25 @@
 class Boltix < Formula
   desc "CLI generator — dynamic command surface from OpenAPI and GraphQL schemas"
   homepage "https://github.com/getboltix/boltix-cli"
-  version "0.0.8"
+  version "0.0.9"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/getboltix/boltix-cli/releases/download/v0.0.8/fern-cli-sdk-aarch64-apple-darwin.tar.gz"
-      sha256 "7936ac03bafe863d2c7fff9801056e2bd8e71b1c8cc43701ee808f476734fec2"
+      url "https://github.com/getboltix/boltix-cli/releases/download/v0.0.9/boltix-aarch64-apple-darwin.tar.gz"
+      sha256 "7d4a74817b12bb30fcd06dbcd3607c26e6f5122281e98c380d8aca4e621bd674"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/getboltix/boltix-cli/releases/download/v0.0.8/fern-cli-sdk-x86_64-apple-darwin.tar.gz"
-      sha256 "a351a6254c51dada12eea7dd351544d1694ce6d9f8ff6aebd710fad6369eeecb"
+      url "https://github.com/getboltix/boltix-cli/releases/download/v0.0.9/boltix-x86_64-apple-darwin.tar.gz"
+      sha256 "8f1ec6d0e24b64bb90e47396c22c8fac4fabf894b0dacb2120f85364fd94d545"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/getboltix/boltix-cli/releases/download/v0.0.8/fern-cli-sdk-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "20e5e0704b02f3551dcea924aeeec07e0ece2c78f0fdcb64b15b4338f4ee1e15"
+      url "https://github.com/getboltix/boltix-cli/releases/download/v0.0.9/boltix-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "bac8768378c7a18e0db13feb7435772e22d3af6f89b7a426a936647a5f2d3630"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/getboltix/boltix-cli/releases/download/v0.0.8/fern-cli-sdk-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "252c72a158a40b5ae3744c2c8081d8afb00191a95f9902070ea1560c2596cae4"
+      url "https://github.com/getboltix/boltix-cli/releases/download/v0.0.9/boltix-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "877927cb642c16eb01c6a6473eaae2dc839876ec514b61bc827d1c55da19ada6"
     end
   end
   license "Apache-2.0"
